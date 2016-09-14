@@ -36,6 +36,10 @@ nav {
   height:75px;
   background:#0e492d;
   justify-content: space-between;
+  -webkit-transform: translateY(-75px);
+  -moz-transform: translateY(-75px);
+  -ms-transform: translateY(-75px);
+  -o-transform: translateY(-75px);
   transform: translateY(-75px);
 }
 
@@ -55,6 +59,10 @@ nav span {
   overflow: scroll;
   background: grey;
   margin-top: auto;
+  -webkit-transform: translateY(+75px);
+  -moz-transform: translateY(+75px);
+  -ms-transform: translateY(+75px);
+  -o-transform: translateY(+75px);
   transform: translateY(+75px);
   padding: 10px 15px;
   display: flex;
@@ -76,9 +84,17 @@ nav:hover {
 }
 
 .image-container:hover nav {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
   transform: translateY(0px);
 }
 
 .image-container:hover .image-description {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
   transform: translateY(0px);
 }
