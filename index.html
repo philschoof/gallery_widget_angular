@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="galleryWidget">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Gallery</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <main ng-controller="galleryController">
+
+      <div class="image-container" ng-style="{'background-image': 'url(' + cat.image + ')'}">
+
+        <nav class="image-info">
+
+          <span class="image-title">{{cat.title}}</span>
+
+          <div class="image-buttons">
+            <button ng-click="previousImage()"><i class="glyphicon glyphicon-chevron-left"></i></button>
+            <button ng-click="nextImage()"><i class="glyphicon glyphicon-chevron-right"></i></button>
+          </div>
+
+        </nav>
+
+        <div class="image-info image-description">
+
+          <p>{{cat.description}}</p>
+
+        </div><!--close image-description-->
+
+      </div><!--close image-container-->
+
+    </main><!--close gallery-widget -->
+
+    <script src="app.js"></script>
+  </body>
+</html>
